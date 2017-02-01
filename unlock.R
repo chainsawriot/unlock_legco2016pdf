@@ -1,5 +1,7 @@
 require(tabulizer)
 require(stringr)
+require(plyr)
+
 check <- function(line) {
     ## timeline
     if (sum(str_detect(line, "[0-9]{2}:[0-9]{2}")) / length(line) > 0.5 ) {
